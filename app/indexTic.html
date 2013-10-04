@@ -1,0 +1,26 @@
+<div ng-app="ticSackToe" ng-controller="Game">
+    <p>Which one do you want to play?:
+        <label>
+            <input type="button" value="X" ng-model="player" />
+        </label>
+        <label>
+            <input type="button" value="O" ng-model="player" value="Clear Board" />
+        </label>
+    </p>
+    <div ng-show="$ynchronized">
+     <h2 ng-show="currentPlayer == player">Your Turn</h2>
+
+     <h2 ng-show="currentPlayer != player">Waiting for Opponent</h2>
+
+     <h2 ng-show="winner">WINNER IS {{winner}}!! <input type="button" ng-click="newGame()" value="New Game" /></h2>
+
+    <table border="1">
+        <tr ng-repeat="row in [0,1,2]">
+            <td ng-repeat="column in [0,1,2]" ng-click="cellClick(row,column)" ng-class="cellClass(row,column)">{{cellText(row,column)}}</td>
+        </tr>
+    </table>
+    </div>
+    <div ng-hide="$ynchronized">
+        <h2>Synchronizing with Server</h2>
+    </div>
+</div>

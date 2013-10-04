@@ -1,0 +1,116 @@
+.container {
+    width: 100%;
+    /*background-color: #00d0ff;*/
+    margin: 0px;
+    /*z-index: 0;*/
+}
+
+.gamebox {
+    width: 330px;
+    height: 330px;
+    /*background-color: transparent;*/
+    margin: 100px auto;
+    opacity: .8;
+    position: relative;
+    z-index: 1;
+}
+
+/*Popup over the gameBox to signal win, lose, draw*/
+.popup {
+    height: 231px;
+    width: 70%;
+    background: black;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    position: absolute;
+    color: white;
+    top: 50px;
+    left: 50px;
+    z-index: 5;
+
+}
+
+#start {
+    font-family: 'Volkhov', serif;
+    font-size: 40px;
+}
+
+#win {
+    height: 130px;
+    width: 80%;
+    top: 100px;
+    left:36px;
+    font-family: 'Volkhov', serif;
+    font-size: 45px;
+    display: none;
+
+}
+
+#lose {
+    font-family: 'Volkhov', serif;
+    font-size: 40px;
+    display: none;
+}
+
+#tie {
+    font-family: 'Volkhov', serif;
+    font-size: 40px;
+    display: none;
+}
+
+body {
+    background: black;
+    background: url("images/GIFBARKZ.gif");
+    /*background: url("http://cdn.fansided.com/wp-content/blogs.dir/202/files/2012/11/GIFBARKZ.gif");*/
+    background-size: 100%;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.sqr {
+  height: 100px;
+  width: 100px;
+  border: solid white;
+  margin: 2px;
+  background: white;
+  display: inline-block;
+  text-align: center;
+  font-size: 100px;
+  float: left;
+}
+
+
+#sqr11 {
+  background: white;
+
+}
+
+#sqr12 {
+  background: white;
+}
+
+#sqr13 {
+  background: white;
+}
+
+.buttons {
+    width: 100px;
+    height: 50px;
+    margin: 0px auto 0px auto;
+    padding: 20px 2px 6px 2px;
+    font-size: 20px;
+}
+
+#buttons {
+    width: 100px;
+    height: 50px;
+    margin: 0px auto 0px auto;
+    padding: 20px 2px 6px 2px;
+    font-size: 20px;
+}
+
+/*
+*/
